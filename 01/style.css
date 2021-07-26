@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container-01 {
+    height: 100vh;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#hover-01 {
+    border: 2px solid transparent;
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    /* background: #03fcca; */
+
+}
+#hover-01:hover{
+    border: 2px solid transparent;
+    border: 2px solid #03fcca;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.342);
+    /* text-shadow: 0 5px 5px 1px rgb(0, 0, 0); */
+}
+
+#hover-01::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    transform: scaleY(0);
+    background: #03fcca;
+    z-index: -1;
+    transform-origin: right left;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    /* border: 2px solid #03fcca; */
+
+}
+#hover-01:hover:before{
+    transform: scaleY(1);
+    transform-origin: right left;
+    transition: all 0.5s ease;
+}
+
+#hover-01-1 {
+    border: 2px solid transparent;
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    /* background: #03fcca; */
+
+}
+#hover-01-1:hover{
+    border: 2px solid transparent;
+    border: 2px solid #03fcca;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.342);
+    /* text-shadow: 0 5px 5px 1px rgb(0, 0, 0); */
+}
+
+#hover-01-1::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    transform: scaleX(0);
+    background: #03fcca;
+    z-index: -1;
+    transform-origin: right left;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    /* border: 2px solid #03fcca; */
+
+}
+#hover-01-1:hover:before{
+    transform: scaleX(1);
+    transform-origin: right left;
+    transition: all 0.5s ease;
+}
+
+
+
